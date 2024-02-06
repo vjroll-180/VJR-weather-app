@@ -1,3 +1,23 @@
 body {
-  background-color: blue;
+  background-image: url(globe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 28px;
+  font-family: "Asap", sans-serif;
+  padding: 30px;
+}
+
+.weather-app {
+  background: linear-gradient(
+    109.6deg,
+    rgb(120, 143, 251) 11.2%,
+    rgb(133, 235, 255) 91.1%
+  );
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  color: rgb(0, 58, 139);
 }
