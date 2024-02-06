@@ -95,7 +95,7 @@ a {
 }
 
 img {
-  transform: ;
+  transition: all 200ms ease-in-out;
 }
 
 .weather-app {
