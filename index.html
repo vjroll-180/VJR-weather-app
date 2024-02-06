@@ -22,33 +22,67 @@
             required
             class="form-input-search"
           />
-          <input type="submit" value="search" class="form-input-submit" />
+          <input type="submit" value="Search" class="form-input-submit" />
         </form>
       </header>
 
       <main>
-        <div>
+        <div class="weather-data-current">
           <div>
             <h1>London, UK</h1>
-            <p>Fri 01 January 2024, 12:30</p>
+            <p class="weather-data-current-date">Fri 01 January 2024, 12:30</p>
+            <p class="weather-data-current-description">
+              Wind:
+              <strong>5.5mph</strong>, Humidity: <strong>60%</strong
+              ><br />Moderate rain
+            </p>
           </div>
 
-          <div>
-            <p>Wind: 5.5mph, Humidity:60%<br />Moderate rain</p>
-          </div>
+          <div class="weather-data-current-icon">☔</div>
 
-          <div>☔</div>
-
-          <div>18°C</div>
+          <div class="weather-data-current-temperature">18°C</div>
         </div>
 
-        <div>
+        <div class="weather-data-forecast">
           <ul>
-            <li>Fri<br />☀<br />18°C 11°C</li>
-            <li>Sat<br />☀<br />18°C 11°C</li>
-            <li>Sun<br />☀<br />18°C 11°C</li>
-            <li>Mon<br />☀<br />18°C 11°C</li>
-            <li>Tue<br />☀<br />18°C 11°C</li>
+            <li>
+              <span class="weather-data-forecast-day">Fri</span>
+              <br />
+              <span class="weather-data-forecast-icon">☔</span>
+              <br />
+              <span class="weather-data-forecast-high">19°C</span> 11°C
+            </li>
+
+            <li>
+              <span class="weather-data-forecast-day">Sat</span>
+              <br />
+              <span class="weather-data-forecast-icon">☀</span>
+              <br />
+              <span class="weather-data-forecast-high">18°C</span> 10°C
+            </li>
+
+            <li>
+              <span class="weather-data-forecast-day">Sun</span>
+              <br />
+              <span class="weather-data-forecast-icon">⛅</span>
+              <br />
+              <span class="weather-data-forecast-high">17°C</span> 14°C
+            </li>
+
+            <li>
+              <span class="weather-data-forecast-day">Mon</span>
+              <br />
+              <span class="weather-data-forecast-icon">🌫</span>
+              <br />
+              <span class="weather-data-forecast-high">19°C</span> 10°C
+            </li>
+            <li>
+              <span class="weather-data-forecast-day">Tue</span>
+              <br />
+              <span class="weather-data-forecast-icon">❄</span>
+              <br />
+              <span class="weather-data-forecast-high">15°C</span> 13°C
+            </li>
           </ul>
         </div>
       </main>
@@ -65,9 +99,16 @@
           >
         </div>
 
-        <div>
-          <button>°C</button>
-          <button>°F</button>
+        <div class="footer-icons">
+          <div>
+            <img src="src/github-icon.png" width="44px" class="github-icon" />
+            <img src="src/netlify-icon.png" width="46px" class="netlify-icon" />
+          </div>
+
+          <div>
+            <button>°C</button>
+            <button>°F</button>
+          </div>
         </div>
       </footer>
     </div>

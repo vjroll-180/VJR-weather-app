@@ -42,25 +42,73 @@ button {
   border-radius: 20px;
   color: rgb(0, 58, 139);
   transition: all 200ms ease-in-out;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 button:hover {
-  background: #788ffb;
+  background: rgb(120, 143, 251);
   color: white;
+}
+
+main {
+  padding: 25px;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+li {
+  display: inline-block;
+  border: 1px solid rgb(28, 116, 238);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 2px;
+  text-align: center;
+  font-size: 18px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 15.8%,
+    rgb(252, 239, 250) 22.8%,
+    rgb(234, 251, 251) 34.9%,
+    rgb(240, 251, 244) 46.7%
+  );
+  opacity: 0.85;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.1);
+}
+
+a {
+  color: rgb(152, 20, 72);
+  font-weight: bold;
+}
+
+img {
+  transform: ;
 }
 
 .weather-app {
   background: linear-gradient(
     109.6deg,
-    rgb(120, 143, 251) 11.2%,
-    rgb(133, 235, 255) 91.1%
+    rgb(145, 163, 246) 11.2%,
+    rgb(113, 202, 220) 91.1%
   );
   padding: 25px;
   margin: 0 auto;
   max-width: 600px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   color: rgb(0, 58, 139);
 }
 
@@ -88,9 +136,82 @@ button:hover {
     rgb(240, 251, 244) 35.7%
   );
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 .form-input-submit:hover {
   background: rgb(120, 143, 251);
   color: white;
+}
+
+.weather-data-current {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-data-current-date {
+  font-size: 21px;
+  margin-top: 0;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.weather-data-current-description {
+  font-size: 18px;
+}
+
+.weather-data-current-icon {
+  font-size: 90px;
+  display: block;
+  position: relative;
+  bottom: -95px;
+}
+
+.weather-data-current-temperature {
+  font-size: 55px;
+  font-weight: 600;
+  display: block;
+  position: relative;
+  bottom: -95px;
+}
+
+.weather-data-forecast-day {
+  font-weight: 900;
+  color: rgb(56, 86, 218);
+}
+
+.weather-data-forecast-icon {
+  font-size: 50px;
+  padding-top: 10px;
+  display: block;
+}
+
+.weather-data-forecast-high {
+  color: rgb(152, 20, 72);
+  font-weight: bold;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.github-icon {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.netlify-icon {
+  background: white;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.github-icon:hover {
+  transform: scale(1.5);
+}
+
+.netlify-icon:hover {
+  transform: scale(1.5);
 }
