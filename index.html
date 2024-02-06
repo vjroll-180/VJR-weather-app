@@ -6,15 +6,58 @@
     <title>Weather app</title>
   </head>
   <body>
-    <header></header>
-    <main><h1>Hello world</h1></main>
-    <footer>
-      Coded by
-      <a href="https://github.com/vjroll-180" target="_blank"
-        >Victoria Rowlands</a
-      >
-      and hosted on
-      <a href="https://vjr-weather-app.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+
+      <main>
+        <div>
+          <div>
+            <h1>London, UK</h1>
+            <p>Fri 01 January 2024, 12:30</p>
+          </div>
+
+          <div>
+            <p>Wind: 5.5mph, Humidity:60%<br />Moderate rain</p>
+          </div>
+
+          <div>☔</div>
+
+          <div>18°C</div>
+        </div>
+
+        <div>
+          <ul>
+            <li>Fri<br />☀<br />18°C 11°C</li>
+            <li>Sat<br />☀<br />18°C 11°C</li>
+            <li>Sun<br />☀<br />18°C 11°C</li>
+            <li>Mon<br />☀<br />18°C 11°C</li>
+            <li>Tue<br />☀<br />18°C 11°C</li>
+          </ul>
+        </div>
+      </main>
+
+      <footer>
+        <div>
+          Coded by
+          <a href="https://github.com/vjroll-180" target="_blank"
+            >Victoria Rowlands</a
+          >
+          and hosted on
+          <a href="https://vjr-weather-app.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </div>
+
+        <div>
+          <button>°C</button>
+          <button>°F</button>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
