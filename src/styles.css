@@ -161,10 +161,10 @@ img {
 }
 
 .weather-data-current-icon {
-  font-size: 90px;
+  width: 90px;
   display: block;
   position: relative;
-  bottom: -95px;
+  bottom: -32px;
 }
 
 .weather-data-current-temperature {
