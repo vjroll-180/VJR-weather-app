@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="form-input-search"
+            id="form-input-search"
           />
           <input type="submit" value="Search" class="form-input-submit" />
         </form>
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-data-current">
           <div>
-            <h1>London, UK</h1>
+            <h1><span id="city">London</span></h1>
             <p class="weather-data-current-date">Fri 01 January 2024, 12:30</p>
             <p class="weather-data-current-description">
               Wind:
