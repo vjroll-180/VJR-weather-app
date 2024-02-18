@@ -1,3 +1,33 @@
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="row">
+    <div class="col-1">
+      <div class="weather-forecast-day">${day}</div>
+      <div class="weather-forecast-icon">
+        <img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png"
+          alt=""
+          width="50"
+          class="weather-forecast-icon"
+        />
+      </div>
+      <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-high">22°</span>
+        <span class="weather-forecast-temperature-low">12°</span>
+      </div>
+    </div>
+  </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
@@ -88,3 +118,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", submitSearch);
 
 searchCity("Lisbon");
+
+displayForecast();
