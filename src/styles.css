@@ -184,6 +184,10 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+.weather-forecast-temperature {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .weather-forecast-temperature-high {
   color: rgb(152, 20, 72);
