@@ -175,43 +175,25 @@ img {
   bottom: -95px;
 }
 
-.weather-data-forecast-day {
+.weather-forecast-day {
   font-weight: 900;
   color: rgb(56, 86, 218);
 }
 
-.weather-data-forecast-icon {
-  font-size: 50px;
+.weather-forecast-icon {
   padding-top: 10px;
-  display: block;
 }
 
-.weather-data-forecast-high {
+.weather-forecast-temperature-high {
   color: rgb(152, 20, 72);
   font-weight: bold;
 }
 
-.footer-icons {
-  display: flex;
-  justify-content: space-evenly;
+.row {
+  display: inline-block;
+  margin: 25px;
 }
 
-.github-icon {
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-}
-
-.netlify-icon {
-  background: white;
-  border-radius: 50%;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-}
-
-.github-icon:hover {
-  transform: scale(1.5);
-}
-
-.netlify-icon:hover {
-  transform: scale(1.5);
+.col-1 {
+  text-align: center;
 }
