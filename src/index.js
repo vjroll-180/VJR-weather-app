@@ -1,4 +1,6 @@
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
   let forecastHtml = "";
 
@@ -28,6 +30,13 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
+function getForecast(city) {
+  let apiKey = "13da71b4bebee18bac0t70ddd06fbo9b";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+
+  axios(apiUrl).then(displayForecast);
+}
+
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
@@ -49,6 +58,8 @@ function refreshWeather(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img
               src="${response.data.condition.icon_url}" class="weather-data-current-icon"/>`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -118,5 +129,3 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", submitSearch);
 
 searchCity("Lisbon");
-
-displayForecast();
